@@ -1,9 +1,129 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>SM International QC</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SM International QC</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
+    text-align: center;
+}
+
+/* اللوجو */
+.logo {
+    margin-top: 50px;
+}
+
+.logo img {
+    width: 280px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    transition: 0.3s;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+/* العنوان */
+h1 {
+    margin-top: 20px;
+    font-size: 32px;
+}
+
+/* الوصف */
+p {
+    color: #ddd;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+/* السيكشن */
+.section {
+    margin-top: 60px;
+}
+
+/* البوكسات */
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 15px;
+    width: 250px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    background: rgba(255,255,255,0.1);
+    transform: translateY(-5px);
+}
+
+/* الفوتر */
+.footer {
+    margin-top: 80px;
+    padding: 20px;
+    background: rgba(0,0,0,0.3);
+}
+</style>
+
 </head>
+
 <body>
-    <h1>Welcome to SM International QC</h1>
+
+<!-- اللوجو -->
+<div class="logo">
+    <img src="sm.jpg" alt="SM Logo">
+</div>
+
+<h1>SM International Quality Control</h1>
+<p>Professional Inspection & Quality Control Services in Oil & Gas, Construction, and Industrial Projects.</p>
+
+<!-- الخدمات -->
+<div class="section">
+    <h2>Our Services</h2>
+
+    <div class="services">
+        <div class="card">
+            <h3>Welding Inspection</h3>
+            <p>Certified welding inspection and quality assurance.</p>
+        </div>
+
+        <div class="card">
+            <h3>NDT Testing</h3>
+            <p>Advanced Non-Destructive Testing methods.</p>
+        </div>
+
+        <div class="card">
+            <h3>Project Supervision</h3>
+            <p>Full supervision and quality monitoring for projects.</p>
+        </div>
+    </div>
+</div>
+
+<!-- تواصل -->
+<div class="section">
+    <h2>Contact Us</h2>
+    <p>Email: sm@sminternationalqc.com</p>
+    <p>Phone: 01096892884</p>
+</div>
+
+<!-- الفوتر -->
+<div class="footer">
+    <p>© 2026 SM International QC. All Rights Reserved.</p>
+</div>
+
 </body>
 </html>
