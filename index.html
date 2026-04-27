@@ -41,30 +41,29 @@ nav a {
 /* HERO */
 .hero {
     height: 100vh;
-    background: url("sm.jpg") no-repeat center center/cover;
+    background: url("sm.jpg") no-repeat center center;
+    background-size: contain;
+    background-color: #0f2027;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding-top: 70px; /* مهم عشان الناف بار */
+    padding-top: 70px;
 }
 
-/* OVERLAY */
 .overlay {
-    background: rgba(0,0,0,0.65);
-    padding: 50px;
-    border-radius: 10px;
+    background: rgba(0,0,0,0.5);
+    padding: 40px;
+    border-radius: 15px;
     max-width: 600px;
 }
 
 .overlay h1 {
     font-size: 48px;
-    font-weight: bold;
 }
 
 .overlay p {
     margin-top: 15px;
-    font-size: 18px;
     color: #ddd;
 }
 
@@ -87,7 +86,6 @@ nav a {
 
 .services h2 {
     margin-bottom: 40px;
-    font-size: 32px;
 }
 
 .grid {
@@ -98,15 +96,10 @@ nav a {
 
 .card {
     background: rgba(255,255,255,0.08);
-    padding: 40px 20px;
+    padding: 40px;
     border-radius: 15px;
     transition: 0.3s;
     cursor: pointer;
-}
-
-.card h3 {
-    font-size: 20px;
-    font-weight: bold;
 }
 
 .card:hover {
@@ -115,37 +108,11 @@ nav a {
     color: black;
 }
 
-/* ABOUT */
-.about {
-    padding: 80px 20px;
-    background: #203a43;
-    text-align: center;
-}
-
-.about p {
-    max-width: 700px;
-    margin: auto;
-    color: #ddd;
-}
-
 /* FOOTER */
 footer {
     background: black;
     text-align: center;
     padding: 30px;
-}
-
-/* MOBILE */
-@media(max-width:768px){
-    nav {
-        flex-direction: column;
-        height: auto;
-        padding: 10px;
-    }
-
-    nav div {
-        margin-top: 10px;
-    }
 }
 
 </style>
@@ -158,9 +125,10 @@ footer {
 <nav>
     <h2>SM QC</h2>
     <div>
-        <a href="#">Home</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="request.html">Request</a>
     </div>
 </nav>
 
@@ -169,50 +137,43 @@ footer {
     <div class="overlay">
         <h1>SM International Quality Control</h1>
         <p>Inspection | Welding | Coating | Rope Access</p>
-        <button class="btn">Request Service</button>
+        <button class="btn" onclick="location.href='request.html'">
+            Request Service
+        </button>
     </div>
 </section>
 
 <!-- SERVICES -->
-<section class="services" id="services">
+<section class="services">
     <h2>Our Services</h2>
 
     <div class="grid">
 
-        <div class="card" onclick="location.href='inspection.html'">
+        <div class="card" onclick="location.href='services.html'">
             <h3>Inspection</h3>
         </div>
 
-        <div class="card" onclick="location.href='welding.html'">
+        <div class="card" onclick="location.href='services.html'">
             <h3>Welding & Fabrication</h3>
         </div>
 
-        <div class="card" onclick="location.href='coating.html'">
+        <div class="card" onclick="location.href='services.html'">
             <h3>Coating & Painting</h3>
         </div>
 
-        <div class="card" onclick="location.href='sandblasting.html'">
+        <div class="card" onclick="location.href='services.html'">
             <h3>Sandblasting</h3>
         </div>
 
-        <div class="card" onclick="location.href='rope.html'">
+        <div class="card" onclick="location.href='services.html'">
             <h3>Rope Access</h3>
         </div>
 
     </div>
 </section>
 
-<!-- ABOUT -->
-<section class="about">
-    <h2>About Us</h2>
-    <p>
-        SM International Quality Control is a specialized company in inspection,
-        NDT, welding, coating, and rope access services for oil & gas and construction projects.
-    </p>
-</section>
-
 <!-- FOOTER -->
-<footer id="contact">
+<footer>
     <p>Email: sm@sminternationalqc.com</p>
     <p>Cairo, Egypt</p>
 </footer>
