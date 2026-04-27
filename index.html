@@ -81,30 +81,32 @@ nav a {
 
 .services h2 {
     margin-bottom: 40px;
+    font-size: 32px;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
 }
 
 .card {
     background: rgba(255,255,255,0.08);
-    padding: 30px;
+    padding: 40px 20px;
     border-radius: 15px;
     transition: 0.3s;
     cursor: pointer;
 }
 
-.card:hover {
-    transform: translateY(-10px);
-    background: rgba(255,255,255,0.15);
+.card h3 {
+    font-size: 20px;
+    font-weight: bold;
 }
 
-.card img {
-    width: 60px;
-    margin-bottom: 15px;
+.card:hover {
+    transform: translateY(-10px);
+    background: #00c6ff;
+    color: black;
 }
 
 /* ABOUT */
@@ -150,8 +152,8 @@ footer {
     <h2>SM QC</h2>
     <div>
         <a href="#">Home</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
     </div>
 </nav>
 
@@ -159,39 +161,34 @@ footer {
 <section class="hero">
     <div class="overlay">
         <h1>SM International Quality Control</h1>
-        <p>Inspection | NDT | Welding | Rope Access</p>
+        <p>Inspection | Welding | Coating | Rope Access</p>
         <button class="btn">Request Service</button>
     </div>
 </section>
 
 <!-- SERVICES -->
-<section class="services">
+<section class="services" id="services">
     <h2>Our Services</h2>
 
     <div class="grid">
 
         <div class="card" onclick="location.href='inspection.html'">
-            <img src="icons/inspection.png">
             <h3>Inspection</h3>
         </div>
 
         <div class="card" onclick="location.href='welding.html'">
-            <img src="icons/welding.png">
-            <h3>Welding</h3>
+            <h3>Welding & Fabrication</h3>
         </div>
 
         <div class="card" onclick="location.href='coating.html'">
-            <img src="icons/coating.png">
             <h3>Coating & Painting</h3>
         </div>
 
         <div class="card" onclick="location.href='sandblasting.html'">
-            <img src="icons/sandblasting.png">
             <h3>Sandblasting</h3>
         </div>
 
         <div class="card" onclick="location.href='rope.html'">
-            <img src="icons/rope.png">
             <h3>Rope Access</h3>
         </div>
 
@@ -203,15 +200,15 @@ footer {
     <h2>About Us</h2>
     <p>
         SM International Quality Control is a specialized company in inspection,
-        NDT, and industrial services for oil & gas and construction projects.
+        NDT, welding, coating, and rope access services for oil & gas and construction projects.
     </p>
 </section>
 
 <!-- FOOTER -->
-<footer>
+<footer id="contact">
     <p>Email: sm@sminternationalqc.com</p>
     <p>Cairo, Egypt</p>
 </footer>
 
 </body>
-</html>
+</html
