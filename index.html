@@ -3,37 +3,85 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SM International QC</title>
+<title>SM International Quality Control</title>
 
 <style>
 body {
     margin: 0;
-    font-family: Arial;
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
     color: white;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: rgba(0,0,0,0.6);
+}
+
+nav h2 {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #ddd;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #00c6ff;
+    border: none;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Services */
+.services {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.card {
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    width: 25%;
+    border-radius: 10px;
     text-align: center;
 }
 
-.logo img {
-    width: 280px;
-    margin-top: 50px;
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+/* About */
+.about {
+    padding: 50px;
+    text-align: center;
 }
 
-h1 {
-    margin-top: 20px;
-    font-size: 28px;
-}
-
-.section {
-    margin-top: 50px;
-}
-
-.footer {
-    margin-top: 80px;
-    padding: 20px;
-    background: rgba(0,0,0,0.5);
+/* Contact */
+.contact {
+    text-align: center;
+    padding: 50px;
+    background: rgba(0,0,0,0.6);
 }
 </style>
 
@@ -41,26 +89,52 @@ h1 {
 
 <body>
 
-<div class="logo">
-    <img src="sm.jpg">
-</div>
+<nav>
+    <h2>SM International QC</h2>
+    <div>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+</nav>
 
-<h1>SM International Quality Control</h1>
+<section class="hero">
+    <h1>Professional Inspection & Quality Control</h1>
+    <p>Oil & Gas | Construction | Industrial Projects</p>
+    <button class="btn">Request Service</button>
+</section>
 
-<div class="section">
-    <h2>Our Services</h2>
-    <p>Welding Inspection - NDT - Quality Control</p>
-</div>
+<section class="services">
+    <div class="card">
+        <h3>Welding Inspection</h3>
+        <p>Certified welding inspection and QA/QC services.</p>
+    </div>
 
-<div class="section">
-    <h2>Contact</h2>
-    <p>sm@sminternationalqc.com</p>
-    <p>01096892884</p>
-</div>
+    <div class="card">
+        <h3>NDT Testing</h3>
+        <p>Advanced non-destructive testing methods.</p>
+    </div>
 
-<div class="footer">
-    <p>© SM International QC</p>
-</div>
+    <div class="card">
+        <h3>Project Supervision</h3>
+        <p>Full supervision and quality monitoring.</p>
+    </div>
+</section>
+
+<section class="about">
+    <h2>About Us</h2>
+    <p>
+        SM International Quality Control is a specialized company in inspection,
+        NDT, and project supervision in oil & gas and construction sectors.
+    </p>
+</section>
+
+<section class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: sm@sminternationalqc.com</p>
+    <p>Location: Cairo, Egypt</p>
+</section>
 
 </body>
 </html>
